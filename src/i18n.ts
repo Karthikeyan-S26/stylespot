@@ -2,8 +2,8 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import enTranslation from './locales/en';
-import frTranslation from './locales/fr';
-import beTranslation from './locales/be';
+import esTranslation from './locales/es';
+import taTranslation from './locales/ta';
 
 i18n
   .use(LanguageDetector)
@@ -13,16 +13,16 @@ i18n
       en: {
         translation: enTranslation,
       },
-      fr: {
-        translation: frTranslation,
+      es: {
+        translation: esTranslation,
       },
-      be: {
-        translation: beTranslation,
+      ta: {
+        translation: taTranslation,
       },
     },
     fallbackLng: 'en',
     interpolation: {
-      escapeValue: false, // React already escapes values
+      escapeValue: false,
     },
   });
 
